@@ -1,0 +1,254 @@
+@mixin user-select($user-select: none){
+	-ms-user-select: $user-select;
+	-webkit-user-select: $user-select;
+	-moz-user-select: $user-select;
+	user-select: $user-select;
+}
+
+@mixin cf() {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+
+@mixin opacity($value: 0) {
+	opacity: $value;
+}
+
+
+@mixin layout1() {
+    box-sizing: border-box;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+@mixin no-appear {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+@mixin middler() {
+	&:after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+
+
+
+
+
+/**
+ * Что: Неподчеркнутая ссылка
+ * Когда: При наведении
+ * Подчеркивание: прямая линия
+ *
+ * @mixin link
+ * @param $color
+ * @param $color-hover
+ * @param $color-visited
+ * @param $element
+ * @param $hover-element
+ */
+@mixin link($color: $typo-link-normal-color, $color-hover: $typo-link-hover-color, $color-visited: null, $element: '&', $hover-element: null) {
+    text-decoration: none;
+    cursor: pointer;
+
+    & {
+        #{$element} {
+            color: $color;
+        }
+    }
+
+    &:visited {
+        #{$element} {
+            @if $color-visited != null {
+                color: $color-visited;
+            } @else {
+                color: $color;
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        #{$element} {
+            border-bottom: 1px solid;
+            @if $color-hover == #fff {
+                border-color: darken(#fff, 50%);
+            } @else {
+                border-color: adjust-color($color-hover, $saturation: -22%, $lightness: 32%);
+            }
+            color: $color-hover;
+        }
+    }
+
+    @if $hover-element != null {
+        #{$hover-element}:hover & {
+            #{$element} {
+                border-bottom: 1px solid;
+                @if $color-hover == #fff {
+                    border-color: darken(#fff, 50%);
+                } @else {
+                    border-color: adjust-color($color-hover, $saturation: -22%, $lightness: 32%);
+                }
+                color: $color-hover;
+            }
+        }
+    }
+}
+
+/**
+ * Что: Подчеркнутая ссылка
+ * Когда: Всегда
+ * Подчеркивание: прямая линия с плавным переходом
+ *
+ * @mixin link-mono
+ * @param $color
+ * @param $element
+ * @param $hover-element
+ */
+@mixin link-mono($color: #fff, $element: '&', $hover-element: null) {
+    text-decoration: none;
+    cursor: pointer;
+
+    &, &:visited {
+        #{$element} {
+            transition: border-color 0.25s ease-out;
+            color: $color;
+            border-bottom: 1px solid;
+            @if $color == #fff {
+                border-color: darken(#fff, 50%);
+            } @else {
+                border-color: adjust-color($color, $saturation: -22%, $lightness: 32%);
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        #{$element} {
+            @if $color == #fff {
+                border-color: darken(#fff, 30%);
+            } @else {
+                border-color: adjust-color($color, $saturation: -22%, $lightness: 15%);
+            }
+        }
+    }
+
+    @if $hover-element != null {
+        #{$hover-element}:hover & {
+            #{$element} {
+                @if $color == #fff {
+                    border-color: darken(#fff, 30%);
+                } @else {
+                    border-color: adjust-color($color, $saturation: -22%, $lightness: 15%);
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Что: Подчеркнутая ссылка
+ * Когда: Всегда
+ * Подчеркивание: точечная линия
+ *
+ * @mixin link-dotted
+ * @param $color
+ * @param $color-hover
+ * @param $color-visited
+ * @param $element
+ * @param $hover-element
+ */
+@mixin link-dotted($color: $typo-link-normal-color, $color-hover: $typo-link-hover-color, $color-visited: null, $element: '&', $hover-element: null) {
+    text-decoration: none;
+    cursor: pointer;
+
+    & {
+        #{$element} {
+            color: $color;
+            border-bottom: 1px dotted $color;
+        }
+    }
+
+    &:visited {
+        #{$element} {
+            @if $color-visited != null {
+                color: $color-visited;
+                border-bottom: 1px dotted $color-visited;
+            } @else {
+                color: $color;
+                border-bottom: 1px dotted $color;
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        #{$element} {
+            color: $color-hover;
+            border-color: $color-hover;
+        }
+    }
+
+    @if $hover-element != null {
+        #{$hover-element}:hover & {
+            #{$element} {
+                color: $color-hover;
+                border-color: $color-hover;
+            }
+        }
+    }
+}
+
+/**
+ * Что: Подчеркнутая ссылка
+ * Когда: Всегда
+ * Подчеркивание: точечная линия с плавным переходом
+ *
+ * @mixin link-dotted-mono
+ * @param $color
+ * @param $element
+ * @param $hover-element
+ */
+@mixin link-dotted-mono($color: #fff, $element: '&', $hover-element: null) {
+    text-decoration: none;
+    cursor: pointer;
+
+    &, &:visited {
+        #{$element} {
+            transition: border-color 0.25s ease-out;
+            color: $color;
+            border-bottom: 1px dotted;
+            @if $color == #fff {
+                border-color: darken(#fff, 25%);
+            } @else {
+                border-color: adjust-color($color, $saturation: -22%, $lightness: 18%);
+            }
+        }
+    }
+
+    &:hover, &:focus {
+        #{$element} {
+            color: $color;
+            border-bottom: 1px dotted $color;
+        }
+    }
+
+    @if $hover-element != null {
+        #{$hover-element}:hover & {
+            #{$element} {
+                color: $color;
+                border-bottom: 1px dotted $color;
+            }
+        }
+    }
+}

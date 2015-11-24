@@ -1,0 +1,79 @@
+.navigation {
+    background: #008d9f;
+}
+    
+    .navigation__inner {
+        @include layout1;
+        @include cf;
+        padding-top: 35px;
+        padding-bottom: 55px;
+    }
+
+        .navigation__col {
+            width: 33.333%;
+            box-sizing: border-box;
+            float: left;
+
+            & + & {
+                padding-left: 2%;
+            }
+        }
+
+            .navigation__menu {
+                & + & {
+                    margin-top: 46px;
+                }
+            }
+
+                .navigation__menu-item {
+                    margin-left: 13px;
+
+                    &._header {
+                        margin-left: 0;
+                    }
+                }
+
+                    .navigation__menu-item-link {
+                        display: inline-block;
+                        color: $light-fc;
+                        text-decoration: none;
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding: 11px 22px;
+                        border-radius: 4px;
+                        position: relative;
+                        transition: background 0.3s;
+
+
+                        // &:after {
+                        //     content: '';
+                        //     position: absolute;
+                        //     width: 600px;
+                        //     height: 1px;
+                        //     background: red;
+                        //     top: 29px;
+                        // }
+
+                        &:hover {
+                            background: #00a7bc;
+                        }
+
+                        .navigation__menu-item._header & {
+                            font-size: 21px;
+                            color: $color-0;
+                            font-weight: 700;
+                            padding-left: 35px;
+
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                display: inline-block;
+                                left: 0px;
+                                top: 11px;
+                                width: 24px;
+                                height: 24px;
+                                background: url('../images/icons/star.png') no-repeat;
+                            }
+                        }
+                    }
+

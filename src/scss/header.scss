@@ -1,0 +1,159 @@
+.header {
+    background: #00b1be url('../images/header-bg.jpg') no-repeat center -130px;
+    color: $light-fc;
+
+    &._promo {
+        background-position: center;
+    }
+}
+
+    .header__inner {
+        @include layout1;
+        @include cf;
+        height: 100px;
+
+    }
+
+        .header__logo {
+            width: 340px;
+            height: 59px;
+            margin: 28px 25px 0 0;
+            float: left;
+        }
+
+            .header__logo-link {
+                color: $light-fc;
+                text-decoration: none;
+            }
+
+                .header__logo-title {
+                    font-size: 38px;
+                    line-height: 38px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    display: inline-block;
+                    margin-right: 18px;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 61px;
+                        height: 59px;
+                        top: -12px;
+                        left: 38px;
+                        background: url('../images/big-star.png') no-repeat;
+                    }
+                }
+
+                .header__logo-text {
+                    font-family: $default-ff;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: inline-block;
+                }
+
+
+
+        .header__points {
+            @include cf;
+            float: right;
+            margin-top: 20px;
+        }
+
+            .header__points-item {
+                float: left;
+
+                & + & {
+                    margin-left: 15px;
+                }
+
+                &._menu {
+
+                }
+                &._login {
+
+                }
+            }
+
+                .header__points-item-link {
+                    display: inline-block;
+                    color: $light-fc;
+                    text-decoration: none;
+                    height: 58px;
+                    line-height: 47px;
+                    box-sizing: border-box;
+                    border: 2px solid transparent;
+                    border-radius: 4px;
+                    padding: 0 15px;
+                    transition: border-color 0.3s;
+
+                    &:hover,
+                    &:focus {
+                        border-color: $color-0;
+                    }
+
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+
+
+                    .header__points-item._menu & {
+                        &:before {
+                            background: url('../images/icons/menu.png');
+                            width: 32px;
+                            height: 20px;
+                        }
+                    }
+                    .header__points-item._login & {
+                        &:before {
+                            background: url('../images/icons/auth.png');
+                            width: 38px;
+                            height: 18px;
+                        }
+                    }
+                }
+
+                    .header__points-item-txt {
+                        vertical-align: middle;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+
+
+
+
+
+
+
+
+.header-promo {
+    height: 480px;
+    padding-top: 125px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    .header-promo__title {
+        font-size: 50px;
+        line-height: 65px;
+        margin-bottom: 15px;
+    }
+
+    .header-promo__text {
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 300;
+        margin-bottom: 88px;
+    }
+
+    .header-promo__book-btn {
+        @include button-header;
+        width: 450px;
+    }
