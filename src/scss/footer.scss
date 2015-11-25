@@ -1,0 +1,31 @@
+.footer {
+    background: #212121;
+    color: #615e5e;
+}
+
+    .footer__inner {
+        @include layout1;
+        height: 130px;
+        text-align: center;
+    }
+
+        .footer__logo-h {
+            @include cf;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+            .footer__logo {
+                float: left;
+                width: 128px;
+                height: 47px;
+                background: url('../images/logo-footer.png') no-repeat;
+                margin-right: 25px;
+            }
+
+            .footer__date {
+                float: left;
+                font-size: 16px;
+                line-height: 30px;
+                margin-top: 10px;
+            }
