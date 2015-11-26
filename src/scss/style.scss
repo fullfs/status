@@ -1,13 +1,13 @@
-@import "mixins";
-@import "gradient";
-@import "gui";
-@import "base";
-@import "header";
-@import "navigation";
-@import "page";
-@import "footer";
+@import "common/gradient";
+@import "common/gui";
+@import "common/mixins";
+@import "common/base";
 
-
-.test {
-    @include button-header;
-}
+@import "modules/ui";
+@import "modules/header";
+@import "modules/navigation";
+@import "modules/page";
+@import "modules/footer";
+@import "modules/news";
+@import "modules/news-page";
+@import "modules/go-back";

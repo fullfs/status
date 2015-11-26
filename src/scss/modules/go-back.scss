@@ -1,0 +1,21 @@
+.go-back {
+    margin-bottom: 30px;
+}
+
+    .go-back__link {
+        font-size: 18px;
+        line-height: 36px;
+        color: $blue-fc;
+        text-decoration: none;
+        position: relative;
+        margin-left: 20px;
+
+        &:before {
+            content: '←';
+            font-size: 24px;
+            line-height: 24px;
+            position: absolute;
+            left: -38px;
+            top: -1px;
+        }
+    }

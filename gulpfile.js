@@ -10,7 +10,7 @@ var jadePath = null;
 gulp.task('default', function() {
     gulp.start('buildScss');
     gulp.start('buildJade');
-    watch('./src/scss/*.scss', function () {
+    watch('./src/scss/**/*.scss', function () {
         setTimeout(function() {
             gulp.start('buildScss');
         }, 100)

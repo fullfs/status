@@ -21,9 +21,10 @@
 
 @mixin layout1() {
     box-sizing: border-box;
-	width: 1100px;
+    max-width: 1140px;
+	min-width: 840px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
 
@@ -44,6 +45,19 @@
 	}
 }
 
+@mixin column {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    
+    &:nth-child(2n-1) {
+        padding-right: 1.8%;
+    }
+
+    &:nth-child(2n) {
+        padding-left: 1.8%;
+    }
+}
 
 
 

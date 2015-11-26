@@ -1,9 +1,7 @@
 $default-ff: 'Roboto Slab', serif;
 $default-fc: #222222;
 $light-fc: #fffefe;
-$color-orange: #e2630a;
-$color-orange-l: #de960a;
-
+$blue-fc: #42a5b1;
 
 
 
@@ -37,6 +35,7 @@ $color-0: #fdd154;
 	text-decoration: none;
 	transition: background 0.4s;
     box-sizing: border-box;
+    cursor: pointer;
 
 	&:hover {
 		background: rgba(#fff, 0.3);
@@ -44,7 +43,7 @@ $color-0: #fdd154;
 }
 
 @mixin button() {
-	border: 2px solid #42a5b1;
+	border: 2px solid $blue-fc;
 	border-radius: 4px;
 	display: inline-block;
 	height: 54px;
@@ -56,8 +55,9 @@ $color-0: #fdd154;
 	text-decoration: none;
 	transition: background 0.4s;
     box-sizing: border-box;
+    cursor: pointer;
 
 	&:hover {
-		background: rgba(#42a5b1, 0.2);
+		background: rgba($blue-fc, 0.2);
 	}
 }

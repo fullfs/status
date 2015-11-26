@@ -1,6 +1,8 @@
 .footer {
     background: #212121;
     color: #615e5e;
+    position: relative;
+    z-index: 2;
 }
 
     .footer__inner {

@@ -1,0 +1,49 @@
+.ui-header-1 {
+    font-size: 40px;
+    line-height: 48px;
+    color: $default-fc;
+    margin-bottom: 40px;
+    text-align: center;
+
+    &._inverted {
+        color: $light-fc;
+    }
+
+    &._left {
+        text-align: left;
+    }
+
+    &._shy {
+        margin-bottom: 16px;
+    }
+}
+
+
+.ui-content-box  {
+    margin-top: 50px;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    background: #e9e9e9;
+}
+
+.ui-content {
+    margin: 50px auto 0 auto;
+    max-width: 800px;
+}
+
+.ui-row {
+    @include cf;
+}
+
+.ui-column {
+    @include column;
+}
+
+
+.ui-button {
+    @include button;
+
+    &._wide {
+        width: 100%;
+    }
+}
