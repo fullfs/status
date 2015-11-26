@@ -1,0 +1,15 @@
+.auth-form {
+    background: #333333;
+    padding: 70px 0 20px;
+    position: relative;
+    display: none;
+}
+
+    .auth-form__close {
+        background: url('../images/icons/close.png');
+        width: 49px;
+        height: 48px;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }

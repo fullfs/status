@@ -279,6 +279,7 @@ button {
 	display: inline;
 	font-size: inherit;
 	font-family: inherit;
+    cursor: pointer;
 	
 	&:focus {
 		outline: none;

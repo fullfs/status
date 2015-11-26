@@ -1,76 +1,78 @@
 header.header
-	.header__inner
-		.header__logo
-			a.header__logo-link(href="#")
-				span.header__logo-img
-				p.header__logo-text
-					| Пансионат<br> для пожилых людей 
+    .header__inner
+        .header__logo
+            a.header__logo-link(href="#")
+                span.header__logo-img
+                p.header__logo-text
+                    | Пансионат<br> для пожилых людей 
 
-		ul.header__points
-			li.header__points-item._menu
-				a.header__points-item-link(href="#") 
-					span.header__points-item-txt Меню
-			li.header__points-item._login
-				a.header__points-item-link(href="#") 
-					span.header__points-item-txt Вход в личный кабинет
-
-
-	.header-promo(style="display: none")
-		h2.header-promo__title Достойная забота о ваших близких
-		p.header-promo__text
-			| Круглосуточный и квалифицированный уход,
-			br
-			| домашняя атмосфера и максимум  комфорта.
-		a.header-promo__book-btn(href="#") Забронировать номер
+        ul.header__points
+            li.header__points-item._menu
+                a.header__points-item-link._menu(href="#") 
+                    span.header__points-item-txt Меню
+            li.header__points-item._login
+                a.header__points-item-link._auth(href="#") 
+                    span.header__points-item-txt Вход в личный кабинет
 
 
-nav.navigation(style="display: none")
-	.navigation__inner
-		.navigation__col
-			ul.navigation__menu
-				li.navigation__menu-item._header
-					a.navigation__menu-item-link(href="#")
-						| Компания
-				
-				li.navigation__menu-item
-					a.navigation__menu-item-link(href="#")
-						| О нас
-				
-				li.navigation__menu-item
-					a.navigation__menu-item-link(href="#")
-						| Информация о сфере и направлении деятельности компании
+    .header-promo(style="display: none")
+        h2.header-promo__title Достойная забота о ваших близких
+        p.header-promo__text
+            | Круглосуточный и квалифицированный уход,
+            br
+            | домашняя атмосфера и максимум  комфорта.
+        a.header-promo__book-btn(href="#") Забронировать номер
 
 
-		.navigation__col 
-			ul.navigation__menu
-				li.navigation__menu-item._header
-					a.navigation__menu-item-link(href="#")
-						| Новости
-				
-			ul.navigation__menu
-				li.navigation__menu-item._header
-					a.navigation__menu-item-link(href="#")
-						| Услуги
-				
-				li.navigation__menu-item
-					a.navigation__menu-item-link(href="#")
-						| Перечень услуг
-				
-				li.navigation__menu-item
-					a.navigation__menu-item-link(href="#")
-						| Акции
+    nav.navigation
+        .navigation__inner
+            .navigation__col
+                ul.navigation__menu
+                    li.navigation__menu-item._header
+                        a.navigation__menu-item-link(href="#")
+                            | Компания
+                    
+                    li.navigation__menu-item
+                        a.navigation__menu-item-link(href="#")
+                            | О нас
+                    
+                    li.navigation__menu-item
+                        a.navigation__menu-item-link(href="#")
+                            | Информация о сфере и направлении деятельности компании
 
 
-		.navigation__col
-			ul.navigation__menu
-				li.navigation__menu-item._header
-					a.navigation__menu-item-link(href="#")
-						| Наша забота
-				
-				li.navigation__menu-item
-					a.navigation__menu-item-link(href="#")
-						| График работы
-				
-				li.navigation__menu-item
-					a.navigation__menu-item-link(href="#")
-						| График мероприятий
+            .navigation__col 
+                ul.navigation__menu
+                    li.navigation__menu-item._header
+                        a.navigation__menu-item-link(href="#")
+                            | Новости
+                    
+                ul.navigation__menu
+                    li.navigation__menu-item._header
+                        a.navigation__menu-item-link(href="#")
+                            | Услуги
+                    
+                    li.navigation__menu-item
+                        a.navigation__menu-item-link(href="#")
+                            | Перечень услуг
+                    
+                    li.navigation__menu-item
+                        a.navigation__menu-item-link(href="#")
+                            | Акции
+
+
+            .navigation__col
+                ul.navigation__menu
+                    li.navigation__menu-item._header
+                        a.navigation__menu-item-link(href="#")
+                            | Наша забота
+                    
+                    li.navigation__menu-item
+                        a.navigation__menu-item-link(href="#")
+                            | График работы
+                    
+                    li.navigation__menu-item
+                        a.navigation__menu-item-link(href="#")
+                            | График мероприятий
+
+    include ./auth-form.jade

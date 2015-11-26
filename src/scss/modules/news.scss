@@ -81,3 +81,10 @@
                 margin-top: 4px;
                 color: $default-fc;
             }
+
+
+.news-show-more-btn {
+    @include button;
+    width: 100%;
+    margin-bottom: 100px;
+}

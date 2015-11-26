@@ -5,4 +5,8 @@
     box-sizing: border-box;
     padding-bottom: 130px;
     margin-bottom: -130px;
+
+    &._header-fixed {
+        padding-top: 100px;
+    }
 }
