@@ -156,10 +156,12 @@
     padding-top: 125px;
     box-sizing: border-box;
     text-align: center;
+    background: #00b1be url('../images/header-bg.jpg') no-repeat center bottom;
+    color: $light-fc;
 
-    .header._fixed & {
-        display: none;
-    }
+    // .header._fixed & {
+    //     display: none;
+    // }
 }
 
     .header-promo__title {

@@ -1,12 +1,20 @@
 // Это типа document ready
 $(function() {
     var toggleHeaderFixed = function() {
-        if ($(window).scrollTop() > 0) {
-            $('.header').addClass('_fixed');
-            $('.page').addClass('_header-fixed');
+        var isFixed = $('.header').is('._fixed');
+
+        if ($(window).scrollTop() > $(window).height()) {
+            if (!isFixed) {
+                $('.header').addClass('_fixed').fadeOut(0).fadeIn(500);
+                $('.page').addClass('_header-fixed');
+            }
         } else {
-            $('.header').removeClass('_fixed');
-            $('.page').removeClass('_header-fixed');
+            if (isFixed) {
+                $('.header').fadeOut(500, function() {
+                    $(this).removeClass('_fixed').fadeIn(0);
+                })
+                $('.page').removeClass('_header-fixed');
+            }
         }
         
     }

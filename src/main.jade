@@ -11,4 +11,61 @@ html
         .page
             include ./includes/header.jade
 
+            section.ui-content
+                h2.ui-header-1 О нас
+                
+                .about-us
+                    p.about-us__description
+                        | Мы предоставляем своим подопечным круглосуточный и квалифицированный уход, частичку домашней атмосферы и комфорта. Весь наш персонал доброжелателен, терпелив и всегда тактичен. Специалисты имеют богатый опыт работы с пожилыми людьми, с теми, кто нуждается в постоянном уходе, а также навыки работы с малоподвижными людьми. 
+
+                a.ui-button._wide._indent-after(href="#") Все достоинства нашего пансионата
+
+            section.ui-content
+                h2.ui-header-1 Сми о нас
+
+
+                div#smi
+                    article.in-smi-big
+                        a.in-smi-big__link(href="#" title="Полезный досуг в пансионате ")
+                            .in-smi-big__img-h
+                                img.in-smi-big__img(src="content/news-big1.jpg" alt="")
+
+                            .in-smi-big__caption
+                                h3.in-smi-big__title
+                                    | Forbes.ru
+
+                                p.in-smi-big__description
+                                    | ЦБ России сформировал список из десяти системно значимых банков, к которым будут предъявляться требования по нормативу краткосрочной ликвидности 
+                                
+                                time.in-smi-big__date(datetime="2015-11-07")
+                                    | 14.04.15
+                    .ui-row
+                        .ui-column 
+                            article.in-smi
+                                a.in-smi__link(href="#" title="Полезный досуг в пансионате ")
+                                    .in-smi__caption
+                                        h3.in-smi__title
+                                            | Finparty.ru
+
+                                        p.in-smi__description
+                                            | Агентство по страхованию вкладов (АСВ) по программе господдержки передало банкам "Петрокоммерц" и "ФК Открытие" облигации федерального займа (ОФЗ) на сумму 
+                                        
+                                        time.in-smi__date(datetime="2015-11-07")
+                                            | 14.04.15
+                        .ui-column
+                            article.in-smi
+                                a.in-smi__link(href="#" title="")
+                                    .in-smi__caption
+                                        h3.in-smi__title
+                                            | Vedomosti.ru
+
+                                        p.in-smi__description
+                                            | ЦБ РФ в конце декабря 2014 года принял решение санировать "Траст" при помощи АСВ, санатором был выбран банк "ФК Открытие", входящий в "Открытие Холдинг".
+                                        
+                                        time.in-smi__date(datetime="2015-11-07")
+                                            | 07.11.15
+                
+
+                button.ui-button._wide._indent-after(type="button") Показать еще 
+
         include ./includes/footer.jade

@@ -37,6 +37,10 @@
 
 .ui-column {
     @include column;
+
+    &:nth-child(2n+1) {
+        clear: both;
+    }
 }
 
 
@@ -45,5 +49,9 @@
 
     &._wide {
         width: 100%;
+    }
+
+    &._indent-after {
+        margin-bottom: 100px;
     }
 }
