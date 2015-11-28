@@ -12,8 +12,8 @@ $(function() {
             if (isFixed) {
                 $('.header').fadeOut(500, function() {
                     $(this).removeClass('_fixed').fadeIn(0);
-                })
-                $('.page').removeClass('_header-fixed');
+                    $('.page').removeClass('_header-fixed');
+                });
             }
         }
         

@@ -53,6 +53,11 @@ body {
     color: $default-fc;
 }
 
+html button, html input[type=submit] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
 
 // ::-moz-selection { background: #3399FF; color: #fff; text-shadow: none; }
 // ::selection { background: #3399FF; color: #fff; text-shadow: none; }
