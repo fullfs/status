@@ -47,10 +47,6 @@
 .ui-button {
     @include button;
 
-    &._wide {
-        width: 100%;
-    }
-
     &._indent-after {
         margin-bottom: 100px;
     }

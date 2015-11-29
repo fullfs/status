@@ -5,4 +5,117 @@
 }
     .about-us__description {
         text-align: center;
+        margin-bottom: 45px;
     }
+
+
+    .about-us__cases-big {
+        @include cf;
+        margin-bottom: 45px;
+    }
+
+        .about-us__cases-big-item {
+            float: left;
+            text-align: center;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: top;
+                width: 94px;
+                height: 94px;
+            }
+
+            &._24h {
+                width: 28%;
+
+                &:before {
+                    background: url('../images/icons/big-24h.png');
+                }
+            }
+
+            &._care {
+                width: 44%;
+
+                &:before {
+                    background: url('../images/icons/big-care.png');
+                }
+            }
+
+            &._meds {
+                width: 28%;
+
+                &:before {
+                    background: url('../images/icons/big-meds.png');
+                }
+            }
+        }
+
+            .about-us__cases-big-txt {
+                display: block;
+                max-width: 220px;
+                margin: 16px auto 0 auto;
+                @include typo-point;
+            }
+
+
+
+    .about-us__cases-medium {
+        @include cf;
+        margin-bottom: 45px;
+    }
+
+        .about-us__cases-medium-item {
+            float: left;
+            text-align: center;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: top;
+                width: 74px;
+                height: 74px;
+            }
+
+
+            &._comfort {
+                width: 25%;
+
+                &:before {
+                    background: url('../images/icons/medium-comfort.png');
+                }
+            }
+
+            &._monitoring {
+                width: 25%;
+
+                &:before {
+                    background: url('../images/icons/medium-monitoring.png');
+                }
+            }
+
+            &._wash {
+                width: 25%;
+
+                &:before {
+                    background: url('../images/icons/medium-wash.png');
+                }
+            }
+
+            &._devices {
+                width: 25%;
+
+                &:before {
+                    background: url('../images/icons/medium-devices.png');
+                }
+            }
+        }
+
+            .about-us__cases-medium-txt {
+                display: block;
+                // max-width: 220px;
+                margin: 14px auto 0 auto;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: normal;
+            }

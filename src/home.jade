@@ -1,0 +1,198 @@
+doctype html
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+html 
+    <!--<![endif]-->
+    head
+        include ./includes/head.jade
+
+    body
+        .page
+            - headerClass = '_promo'
+            include ./includes/header.jade
+            include ./includes/header-promo.jade
+
+            section.ui-content
+                h2.ui-header-1 О нас
+                
+                .about-us
+                    p.about-us__description
+                        | Мы предоставляем своим подопечным круглосуточный и квалифицированный уход, частичку домашней атмосферы и комфорта. Весь наш персонал доброжелателен, терпелив и всегда тактичен. Специалисты имеют богатый опыт работы с пожилыми людьми, с теми, кто нуждается в постоянном уходе, а также навыки работы с малоподвижными людьми. 
+
+                    ul.about-us__cases-big
+                        li.about-us__cases-big-item._24h
+                            p.about-us__cases-big-txt
+                                | Круглосуточный уход
+
+                        li.about-us__cases-big-item._care
+                            p.about-us__cases-big-txt
+                                | Еженедельный осмотр врача
+
+                        li.about-us__cases-big-item._meds
+                            p.about-us__cases-big-txt
+                                | Контроль приема лекарств
+                    
+
+                    ul.about-us__cases-medium
+                        li.about-us__cases-medium-item._comfort
+                            p.about-us__cases-medium-txt
+                                | Комфортабельные команты
+
+                        li.about-us__cases-medium-item._monitoring
+                            p.about-us__cases-medium-txt
+                                | Мониторинг состояния<br> здоровья через личный<br> кабинет на сайте
+
+                        li.about-us__cases-medium-item._wash
+                            p.about-us__cases-medium-txt
+                                | Гигиенический<br> и косметический<br> уход
+                       
+                        li.about-us__cases-medium-item._devices
+                            p.about-us__cases-medium-txt
+                                | Медицинское<br> и специальное<br> оборудование
+
+
+                a.ui-button._indent-after(href="#") Все достоинства нашего пансионата
+
+
+
+
+
+
+
+
+
+
+
+            section.ui-content
+                h2.ui-header-1 Сми о нас
+
+
+                div#smi
+                    article.in-smi-big
+                        a.in-smi-big__link(href="#" title="Полезный досуг в пансионате ")
+                            .in-smi-big__img-h
+                                img.in-smi-big__img(src="content/news-big1.jpg" alt="")
+
+                            .in-smi-big__caption
+                                h3.in-smi-big__title
+                                    | Forbes.ru
+
+                                p.in-smi-big__description
+                                    | ЦБ России сформировал список из десяти системно значимых банков, к которым будут предъявляться требования по нормативу краткосрочной ликвидности 
+                                
+                                time.in-smi-big__date(datetime="2015-11-07")
+                                    | 14.04.15
+                    .ui-row
+                        .ui-column 
+                            article.in-smi
+                                a.in-smi__link(href="#" title="Полезный досуг в пансионате ")
+                                    .in-smi__caption
+                                        h3.in-smi__title
+                                            | Finparty.ru
+
+                                        p.in-smi__description
+                                            | Агентство по страхованию вкладов (АСВ) по программе господдержки передало банкам "Петрокоммерц" и "ФК Открытие" облигации федерального займа (ОФЗ) на сумму 
+                                        
+                                        time.in-smi__date(datetime="2015-11-07")
+                                            | 14.04.15
+                        .ui-column
+                            article.in-smi
+                                a.in-smi__link(href="#" title="")
+                                    .in-smi__caption
+                                        h3.in-smi__title
+                                            | Vedomosti.ru
+
+                                        p.in-smi__description
+                                            | ЦБ РФ в конце декабря 2014 года принял решение санировать "Траст" при помощи АСВ, санатором был выбран банк "ФК Открытие", входящий в "Открытие Холдинг".
+                                        
+                                        time.in-smi__date(datetime="2015-11-07")
+                                            | 07.11.15
+                
+
+                button.ui-button._indent-after(type="button") Показать еще 
+
+
+
+
+
+
+
+
+
+
+
+
+            section.contact-us
+                h3.ui-header-1 Свяжитесь с нами
+
+                .contact-us__inner
+                    form.contact-us__form(action="/")
+                        input.contact-us__input(type="text" placeholder="Ваше имя")
+                        input.contact-us__input(type="text" placeholder="Телефон*")
+                        input.contact-us__input(type="text" placeholder="E-mail*")
+                        button.contact-us__submit(type="submit") Оставить заявку
+
+                    .contact-us__success(style="display: none")
+                        p.contact-us__success-txt Ваша заявка успешно отправлена!
+
+                    .contact-us__notice
+                        | Специалист свяжется с вами<br>
+                        | в течение 15 минут
+                    
+                    .contact-us__errors(style="display: none")
+                        p.contact-us__errors-item Введите номер вашего телефона
+
+
+
+
+
+
+
+
+
+            section.ui-content
+                h2.ui-header-1 Контактная информация
+                .contacts-block
+                    ul.contacts-block__list
+                        li.contacts-block__item._location
+                            a.contacts-block__item-link(href="#")
+                                span.contacts-block__item-icon
+                                p.contacts-block__item-txt
+                                    | 652616, Кемеровская область, <br>
+                                    | город Белово, <br>
+                                    | ул. Придорожная, дом 42 
+                        
+                        li.contacts-block__item._phone
+                            a.contacts-block__item-link(href="#")
+                                span.contacts-block__item-icon
+                                p.contacts-block__item-txt
+                                    | +7 (384-52) 3-40-50, <br>
+                                    | +7-923-52-77-555
+
+                        li.contacts-block__item._email
+                            a.contacts-block__item-link(href="#")
+                                span.contacts-block__item-icon
+                                p.contacts-block__item-txt
+                                    | info@status-pansionat.ru
+                        
+                        li.contacts-block__item._skype
+                            a.contacts-block__item-link(href="#")
+                                span.contacts-block__item-icon
+                                p.contacts-block__item-txt
+                                    | status-pansionat
+
+                        li.contacts-block__item._vk
+                            a.contacts-block__item-link(href="#")
+                                span.contacts-block__item-icon
+                                p.contacts-block__item-txt
+                                    | Мы ВКонтакте
+                        
+                        li.contacts-block__item._insta
+                            a.contacts-block__item-link(href="#")
+                                span.contacts-block__item-icon
+                                p.contacts-block__item-txt
+                                    | Мы в Instagramm
+
+
+        include ./includes/footer.jade

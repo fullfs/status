@@ -7,18 +7,70 @@ $blue-fc: #42a5b1;
 
 $color-0: #fdd154;
 
-@mixin input-common() {
-	box-sizing: border-box;
-	border: 1px solid #c0c0c0;
-	border-radius: 3px;
-	padding-right: 10px;
-	padding-left: 10px;
-	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 16px;
-	height: 35px;
-	line-height: 32px;
-	box-shadow: 0 2px 0px #393939;
+@mixin input() {
+	font-family: $default-ff;
+	border-radius: 4px;
+	display: inline-block;
+	height: 58px;
+    padding: 0 10px;
+	line-height: 52px;
+	font-size: 21px;
+	font-weight: normal;
+	width: 100%;
+	text-align: center;
+	// padding: 0 30px;
+	text-decoration: none;
+	transition: 0.4s;
+    box-sizing: border-box;
+
+
+	color: $default-fc;
+	border: 2px solid #fff;
 	background: #fff;
+
+	&::-webkit-input-placeholder{
+        color: $default-fc;
+	}
+
+    &::-moz-placeholder {
+        color: $default-fc;
+    }
+
+    &:-ms-input-placeholder {
+        color: $default-fc;
+    }
+
+    &._is-empty {
+        background: rgba(255,255,255,.5);
+    }
+
+    &._error {
+    	border-color: #ee9595;
+    	color: #cb6767;
+    }
+}
+
+
+@mixin button-special() {
+	background: $blue-fc;
+	color: $light-fc;
+	border-radius: 4px;
+	display: inline-block;
+	height: 58px;
+	line-height: 52px;
+	font-size: 21px;
+	font-weight: normal;
+	text-align: center;
+	padding: 0 25px;
+	text-decoration: none;
+	transition: background 0.4s;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+
+	&:hover {
+		background: #008d9f;
+	}
 }
 
 
@@ -36,6 +88,7 @@ $color-0: #fdd154;
 	text-decoration: none;
 	transition: background 0.4s;
     box-sizing: border-box;
+    width: 100%;
     cursor: pointer;
 
 	&:hover {
@@ -57,9 +110,19 @@ $color-0: #fdd154;
 	text-decoration: none;
 	transition: background 0.4s;
     box-sizing: border-box;
+    width: 100%;
     cursor: pointer;
 
 	&:hover {
 		background: rgba($blue-fc, 0.2);
 	}
+}
+
+
+
+
+@mixin typo-point() {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: normal;
 }

@@ -1,8 +1,10 @@
 .auth-form {
     background: #333333;
-    padding: 70px 0 20px;
-    position: relative;
+    padding: 70px 0 140px;
     display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
     .auth-form__close {
@@ -13,3 +15,38 @@
         top: 24px;
         right: 24px;
     }
+
+    
+
+
+    .auth-form__inner {
+        @include layout2;
+        position: relative;
+    }
+
+        .auth-form__form {
+            
+        }
+
+        .auth-form__input {
+            @include input;
+            margin-bottom: 18px;
+        }
+
+        .auth-form__submit {
+            @include button-special;
+            margin-top: 35px;
+        }
+
+        .auth-form__errors {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+            .auth-form__errors-item {
+                @include typo-point;
+                color: #cb6767;
+            }

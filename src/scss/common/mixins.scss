@@ -27,6 +27,14 @@
 	padding: 0 20px;
 }
 
+@mixin layout2() {
+    box-sizing: border-box;
+    max-width: 490px;
+    min-width: 490px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 
 @mixin no-appear {
 	-webkit-appearance: none;

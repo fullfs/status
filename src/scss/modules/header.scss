@@ -1,6 +1,7 @@
 .header {
     background: #00b1be url('../images/header-bg.jpg') no-repeat center -130px;
     color: $light-fc;
+    position: relative;
 
     &._promo {
         background-position: top center;
