@@ -1,0 +1,364 @@
+.person-title {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+.person {
+    @include layout1;
+    margin-top: 20px;
+}
+
+.person-head {
+    @include cf;
+    @include layout1;
+    margin-bottom: 40px;
+}  
+
+    .person-head__face {
+        float: left;
+        width: 230px;
+        padding-top: 5px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+
+    .person-head__info {
+        margin-left: 260px;
+        @include cf;
+    } 
+
+        .person-head__info-data {
+            height: 120px;
+            position: relative;
+        } 
+
+            .person-head__header {
+                font-size: 24px;
+                line-height: 30px;
+                max-width: 350px;
+                font-weight: normal;
+
+                @media screen and (max-width: 1140px) {
+                    font-size: 21px;
+                    line-height: 26px;
+                }
+            }
+
+            .person-head__date {
+                position: absolute;
+                left: 0px;
+                bottom: 6px;
+                margin-top: 30px;
+                color: #989898;
+                font-size: 14px;
+                line-height: 36px;
+            }
+
+            .person-head__stats {
+                font-size: 16px;
+                line-height: 30px;
+                float: right;
+                padding-left: 20px;
+                width: 335px;
+
+                @media screen and (max-width: 1140px) {
+                    width: 270px;
+                }
+            }
+
+                .person-head__stats-name {
+                    float: left;
+                    clear: left;
+                    margin-right: 4px;
+
+                    &:after {
+                        content: ':';
+                    }
+                }
+
+                .person-head__stats-value {
+                    font-weight: normal;
+                    float: left;
+                }
+
+
+        .person-head__table {
+            border-top: 1px solid #c6c6c6;
+        }
+
+            .person-head__table-item-h {
+                float: left;
+                padding: 14px 5px 4px 5px;
+                box-sizing: border-box;
+                position: relative;
+
+                & + & {
+                    border-left: 1px solid #c6c6c6;
+                }
+
+                &._age {
+                    width: 14%;
+                    padding-left: 0;
+                }
+
+                &._weight {
+                    width: 19%;
+                }
+
+                &._height {
+                    width: 27%;
+                    padding-left: 40px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 27px;
+                        height: 87px;
+                        left: 23px;
+                        top: 14px;
+                    }
+
+                    &._male {
+                        &:before {
+                            background: url('../images/icons/male.png');
+                        }
+                    }
+
+                    &._female {
+                        &:before {
+                            background: url('../images/icons/_female.png');
+                        }
+                    }
+
+                    @media screen and (max-width: 1140px) {
+                        padding-left: 5px;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+
+                &._temp {
+                    width: 38%;
+                }
+            }
+                .person-head__table-item {
+                    text-align: center;
+                    display: block;
+
+                    .person-head__table-item-h._temp & {
+                        text-align: left;
+                        margin-left: 30px;
+                    }
+                }
+
+                    .person-head__table-item-value {
+                        font-weight: normal;
+                        font-size: 60px;
+                        line-height: 1;
+                        display: block;
+
+                        small {
+                            font-size: 24px;
+                            margin-left: 5px;
+                        }
+
+                        @media screen and (max-width: 1140px) {
+                            font-size: 40px;
+                        }
+                    }
+
+                    .person-head__table-item-label {
+                        font-size: 18px;
+                        line-height: 36px;
+                        display: block;
+
+                        @media screen and (max-width: 1140px) {
+                            font-size: 14px;
+                        }
+                    }
+
+
+
+
+.person-graph {
+    @include layout1;
+}
+
+
+
+
+
+.person-meta {
+    @include layout1;
+    @include cf;
+    margin-bottom: 40px;
+}
+
+    .person-meta__visits {
+        float: left;
+        width: 325px;
+    }
+
+        .person-meta__table {
+            width: 100%;
+            border-top: 1px solid #c6c6c6;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+            .person-meta__table-row {
+
+            }
+
+                .person-meta__table-cell {
+                    .person-meta__table-row:first-child & {
+                        padding-top: 20px;
+                    }
+
+                    &._time {
+
+                    }
+                    
+                    &._day {
+                        font-weight: normal;
+                        width: 165px;
+                    }
+
+                    &._holyday {
+                        color: #dc5050;
+                    }
+                }
+
+
+    .person-meta__wishes {
+        overflow: hidden;
+        padding-left: 45px;
+        position: relative;
+    }
+
+        .person-meta__add-btn {
+            box-sizing: border-box;
+            width: 126px;
+            height: 34px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 300;
+            color: $default-fc;
+            text-align: center;
+            background: #f6f6f6;
+            transition: background 0.4s;
+            border: 1px solid #c6c6c6;
+            border-radius: 4px;
+
+            position: absolute;
+            right: 0px;
+            top: 2px;
+
+            &:hover {
+                background: rgba($blue-fc, 0.2);
+            }
+        }
+
+        .person-meta__wishes-inner {
+            border-top: 1px solid #c6c6c6;
+        }
+
+            .person-meta__wish {
+                padding: 20px 70px 24px 0;
+                border-bottom: 1px solid #c6c6c6;
+                position: relative;
+
+                &._done {
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0px;
+                        width: 49px;
+                        height: 49px;
+                        top: 0px;
+                        bottom: 0px;
+                        margin: auto;
+                        background: url('../images/icons/done.png');
+                    }
+                }
+            }
+
+                .person-meta__wish-date {
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-weight: normal;
+                    margin-bottom: 2px;
+                    display: block;
+                }
+
+                .person-meta__wish-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+
+
+
+
+.person-menu {
+    @include layout1;
+}
+
+    .person-menu__inner {
+        border-top: 1px solid #c6c6c6;
+        padding-top: 20px;
+        @include cf;
+        text-align: justify;
+
+        &:after {
+            display: inline-block;
+            vertical-align: top;
+            height: 0;
+            width: 100%;
+        }
+    }
+
+        .person-menu__item {
+            width: 195px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+            .person-menu__item-link {
+                text-decoration: none;
+            }
+
+                .person-menu__item-img {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                    
+                .person-menu__item-title {
+                    @include link;
+                    display: block;
+                    font-weight: normal;
+                    margin-top: 15px;
+                    margin-bottom: 12px;
+                    font-size: 16px;
+                }
+
+                .person-menu__item-list {
+                }
+
+                    .person-menu__item-list-unit {
+                        color: $default-fc;
+
+                        & + & {
+                            margin-top: 12px;
+                        }
+                    }

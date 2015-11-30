@@ -5,11 +5,10 @@
     .go-back__link {
         font-size: 18px;
         line-height: 36px;
-        color: $blue-fc;
-        text-decoration: none;
         position: relative;
         margin-left: 20px;
-
+        @include link;
+        
         &:before {
             content: '←';
             font-size: 24px;

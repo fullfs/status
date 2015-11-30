@@ -13,8 +13,7 @@
         line-height: 30px;
 
         a {
-            color: $blue-fc;
-            text-decoration: none;
+            @include link;
         }
 
         p {
