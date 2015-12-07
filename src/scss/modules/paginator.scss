@@ -1,12 +1,12 @@
-.paginator {
+.b-paginator {
     margin: 10px 0 10px;
 }
 
-    .paginator__list {
+    .b-paginator__list {
         @include cf;
     }
 
-        .paginator__item {
+        .b-paginator__item {
             border: 1px solid #c6c6c6;
             float: left;
             background: #fff;
@@ -28,7 +28,7 @@
             }
         }
 
-            .paginator__item-link {
+            .b-paginator__item-link {
                 display: block;
                 min-width: 30px;
                 height: 32px;
@@ -39,7 +39,7 @@
                 text-decoration: none;
             }
 
-                .paginator__item-text {
+                .b-paginator__item-text {
                     font-size: 14px;
                     color: $default-fc;
                 }

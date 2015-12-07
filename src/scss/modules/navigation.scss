@@ -1,4 +1,4 @@
-.navigation {
+.b-navigation {
     background: #008d9f;
     display: none;
     position: absolute;
@@ -6,14 +6,14 @@
     right: 0;
 }
     
-    .navigation__inner {
+    .b-navigation__inner {
         @include layout1;
         @include cf;
         padding-top: 35px;
         padding-bottom: 55px;
     }
 
-        .navigation__col {
+        .b-navigation__col {
             width: 33.333%;
             box-sizing: border-box;
             float: left;
@@ -23,18 +23,18 @@
             }
         }
 
-            .navigation__menu {
+            .b-navigation__menu {
                 & + & {
                     margin-top: 46px;
                 }
             }
 
-                .navigation__menu-item {
+                .b-navigation__menu-item {
                     &._header {
                     }
                 }
 
-                    .navigation__menu-item-link {
+                    .b-navigation__menu-item-link {
                         display: inline-block;
                         color: $light-fc;
                         text-decoration: none;
@@ -70,7 +70,7 @@
                             }
                         }
 
-                        .navigation__menu-item._header & {
+                        .b-navigation__menu-item._header & {
                             font-size: 21px;
                             color: $color-0;
                             font-weight: 700;

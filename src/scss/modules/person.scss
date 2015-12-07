@@ -1,21 +1,21 @@
-.person-title {
+.b-person-title {
     font-size: 18px;
     line-height: 36px;
     margin-bottom: 15px;
 }
 
-.person {
+.b-person {
     @include layout1;
     margin-top: 20px;
 }
 
-.person-head {
+.b-person-head {
     @include cf;
     @include layout1;
     margin-bottom: 40px;
 }  
 
-    .person-head__face {
+    .b-person-head__face {
         float: left;
         width: 230px;
         padding-top: 5px;
@@ -26,17 +26,17 @@
     }
 
 
-    .person-head__info {
+    .b-person-head__info {
         margin-left: 260px;
         @include cf;
     } 
 
-        .person-head__info-data {
+        .b-person-head__info-data {
             height: 120px;
             position: relative;
         } 
 
-            .person-head__header {
+            .b-person-head__header {
                 font-size: 24px;
                 line-height: 30px;
                 max-width: 350px;
@@ -48,7 +48,7 @@
                 }
             }
 
-            .person-head__date {
+            .b-person-head__date {
                 position: absolute;
                 left: 0px;
                 bottom: 6px;
@@ -58,7 +58,7 @@
                 line-height: 36px;
             }
 
-            .person-head__stats {
+            .b-person-head__stats {
                 font-size: 16px;
                 line-height: 30px;
                 float: right;
@@ -70,7 +70,7 @@
                 }
             }
 
-                .person-head__stats-name {
+                .b-person-head__stats-name {
                     float: left;
                     clear: left;
                     margin-right: 4px;
@@ -80,17 +80,17 @@
                     }
                 }
 
-                .person-head__stats-value {
+                .b-person-head__stats-value {
                     font-weight: normal;
                     float: left;
                 }
 
 
-        .person-head__table {
+        .b-person-head__table {
             border-top: 1px solid #c6c6c6;
         }
 
-            .person-head__table-item-h {
+            .b-person-head__table-item-h {
                 float: left;
                 padding: 14px 5px 4px 5px;
                 box-sizing: border-box;
@@ -147,17 +147,17 @@
                     width: 38%;
                 }
             }
-                .person-head__table-item {
+                .b-person-head__table-item {
                     text-align: center;
                     display: block;
 
-                    .person-head__table-item-h._temp & {
+                    .b-person-head__table-item-h._temp & {
                         text-align: left;
                         margin-left: 30px;
                     }
                 }
 
-                    .person-head__table-item-value {
+                    .b-person-head__table-item-value {
                         font-weight: normal;
                         font-size: 60px;
                         line-height: 1;
@@ -173,7 +173,7 @@
                         }
                     }
 
-                    .person-head__table-item-label {
+                    .b-person-head__table-item-label {
                         font-size: 18px;
                         line-height: 36px;
                         display: block;
@@ -186,7 +186,7 @@
 
 
 
-.person-graph {
+.b-person-graph {
     @include layout1;
 }
 
@@ -194,30 +194,30 @@
 
 
 
-.person-meta {
+.b-person-meta {
     @include layout1;
     @include cf;
     margin-bottom: 40px;
 }
 
-    .person-meta__visits {
+    .b-person-meta__visits {
         float: left;
         width: 325px;
     }
 
-        .person-meta__table {
+        .b-person-meta__table {
             width: 100%;
             border-top: 1px solid #c6c6c6;
             font-size: 16px;
             line-height: 28px;
         }
 
-            .person-meta__table-row {
+            .b-person-meta__table-row {
 
             }
 
-                .person-meta__table-cell {
-                    .person-meta__table-row:first-child & {
+                .b-person-meta__table-cell {
+                    .b-person-meta__table-row:first-child & {
                         padding-top: 20px;
                     }
 
@@ -236,13 +236,13 @@
                 }
 
 
-    .person-meta__wishes {
+    .b-person-meta__wishes {
         overflow: hidden;
         padding-left: 45px;
         position: relative;
     }
 
-        .person-meta__add-btn {
+        .b-person-meta__add-btn {
             box-sizing: border-box;
             width: 126px;
             height: 34px;
@@ -265,11 +265,11 @@
             }
         }
 
-        .person-meta__wishes-inner {
+        .b-person-meta__wishes-inner {
             border-top: 1px solid #c6c6c6;
         }
 
-            .person-meta__wish {
+            .b-person-meta__wish {
                 padding: 20px 70px 24px 0;
                 border-bottom: 1px solid #c6c6c6;
                 position: relative;
@@ -289,7 +289,7 @@
                 }
             }
 
-                .person-meta__wish-date {
+                .b-person-meta__wish-date {
                     font-size: 16px;
                     line-height: 30px;
                     font-weight: normal;
@@ -297,7 +297,7 @@
                     display: block;
                 }
 
-                .person-meta__wish-text {
+                .b-person-meta__wish-text {
                     font-size: 16px;
                     line-height: 24px;
                 }
@@ -306,11 +306,11 @@
 
 
 
-.person-menu {
+.b-person-menu {
     @include layout1;
 }
 
-    .person-menu__inner {
+    .b-person-menu__inner {
         border-top: 1px solid #c6c6c6;
         padding-top: 20px;
         @include cf;
@@ -324,7 +324,7 @@
         }
     }
 
-        .person-menu__item {
+        .b-person-menu__item {
             width: 195px;
             display: inline-block;
             vertical-align: top;
@@ -333,17 +333,17 @@
             line-height: 18px;
         }
 
-            .person-menu__item-link {
+            .b-person-menu__item-link {
                 text-decoration: none;
             }
 
-                .person-menu__item-img {
+                .b-person-menu__item-img {
                     img {
                         max-width: 100%;
                     }
                 }
                     
-                .person-menu__item-title {
+                .b-person-menu__item-title {
                     @include link;
                     display: block;
                     font-weight: normal;
@@ -352,10 +352,10 @@
                     font-size: 16px;
                 }
 
-                .person-menu__item-list {
+                .b-person-menu__item-list {
                 }
 
-                    .person-menu__item-list-unit {
+                    .b-person-menu__item-list-unit {
                         color: $default-fc;
 
                         & + & {

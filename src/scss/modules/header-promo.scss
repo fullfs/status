@@ -1,4 +1,4 @@
-.header-promo {
+.b-header-promo {
     height: 480px;
     padding-top: 125px;
     box-sizing: border-box;
@@ -11,19 +11,19 @@
     // }
 }
 
-    .header-promo__title {
+    .b-header-promo__title {
         font-size: 50px;
         line-height: 65px;
         margin-bottom: 15px;
     }
 
-    .header-promo__text {
+    .b-header-promo__text {
         font-size: 21px;
         line-height: 26px;
         margin-bottom: 88px;
     }
 
-    .header-promo__book-btn {
+    .b-header-promo__book-btn {
         @include button-header;
         width: 450px;
     }

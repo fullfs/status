@@ -1,18 +1,18 @@
 // Это типа document ready
 $(function() {
     var toggleHeaderFixed = function() {
-        var isFixed = $('.header').is('._fixed');
+        var isFixed = $('.b-header').is('._fixed');
 
         if ($(window).scrollTop() > $(window).height()) {
             if (!isFixed) {
-                $('.header').addClass('_fixed').fadeOut(0).fadeIn(500);
-                $('.page').addClass('_header-fixed');
+                $('.b-header').addClass('_fixed').fadeOut(0).fadeIn(500);
+                $('.b-page').addClass('_header-fixed');
             }
         } else {
             if (isFixed) {
-                $('.header').fadeOut(500, function() {
+                $('.b-header').fadeOut(500, function() {
                     $(this).removeClass('_fixed').fadeIn(100);
-                    $('.page').removeClass('_header-fixed');
+                    $('.b-page').removeClass('_header-fixed');
                 });
             }
         }
@@ -26,26 +26,26 @@ $(function() {
 
 
 
-    $('.header__points-item-link._menu').on('click', function(e) {
+    $('.b-header__points-item-link._menu').on('click', function(e) {
         e.preventDefault();
         
-        $('.auth-form').slideUp(300, function() {
-            $('.navigation').slideToggle(300);
+        $('.b-auth-form').slideUp(300, function() {
+            $('.b-navigation').slideToggle(300);
         })
     });
 
-    $('.header__points-item-link._auth').on('click', function(e) {
+    $('.b-header__points-item-link._auth').on('click', function(e) {
         e.preventDefault();
 
-        $('.navigation').slideUp(300, function() {
-            $('.auth-form').slideToggle(300);
+        $('.b-navigation').slideUp(300, function() {
+            $('.b-auth-form').slideToggle(300);
         })
     });
 
 
 
-    $('.auth-form__close').on('click', function(e) {
-        $('.auth-form').slideToggle(300);
+    $('.b-auth-form__close').on('click', function(e) {
+        $('.b-auth-form').slideToggle(300);
     });
 
 

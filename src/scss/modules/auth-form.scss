@@ -1,4 +1,4 @@
-.auth-form {
+.b-auth-form {
     background: #333333;
     padding: 70px 0 140px;
     display: none;
@@ -7,7 +7,7 @@
     right: 0;
 }
 
-    .auth-form__close {
+    .b-auth-form__close {
         background: url('../images/icons/close.png');
         width: 49px;
         height: 48px;
@@ -19,26 +19,26 @@
     
 
 
-    .auth-form__inner {
+    .b-auth-form__inner {
         @include layout2;
         position: relative;
     }
 
-        .auth-form__form {
+        .b-auth-form__form {
             
         }
 
-        .auth-form__input {
+        .b-auth-form__input {
             @include input;
             margin-bottom: 18px;
         }
 
-        .auth-form__submit {
+        .b-auth-form__submit {
             @include button-special;
             margin-top: 35px;
         }
 
-        .auth-form__errors {
+        .b-auth-form__errors {
             position: absolute;
             left: 0;
             right: 0;
@@ -46,7 +46,7 @@
             text-align: center;
         }
 
-            .auth-form__errors-item {
+            .b-auth-form__errors-item {
                 @include typo-point;
                 color: #cb6767;
             }

@@ -1,29 +1,29 @@
-.contact-us {
+.b-contact-us {
     background: #fdda76 url('../images/contact-us-bg.jpg') no-repeat center top;
     padding: 50px 0 140px;
 }
 
-    .contact-us__inner {
+    .b-contact-us__inner {
         @include layout2;
         position: relative;
     }
 
-        .contact-us__form {
+        .b-contact-us__form {
             
         }
 
-            .contact-us__input {
+            .b-contact-us__input {
                 @include input;
                 margin-bottom: 18px;
             }
 
-            .contact-us__submit {
+            .b-contact-us__submit {
                 @include button-special;
                 margin-top: 20px;
             }
 
 
-        .contact-us__success {
+        .b-contact-us__success {
             height: 306px;
             text-align: center;
             box-sizing: border-box;
@@ -40,12 +40,12 @@
             }
         }
 
-            .contact-us__success-txt {
+            .b-contact-us__success-txt {
                 color: #42a5b1;
                 @include typo-point;
             }
 
-        .contact-us__notice {
+        .b-contact-us__notice {
             @include typo-point;
             position: absolute;
             left: 0;
@@ -54,7 +54,7 @@
             text-align: center;
         }
 
-        .contact-us__errors {
+        .b-contact-us__errors {
             position: absolute;
             left: 0;
             right: 0;
@@ -62,7 +62,7 @@
             text-align: center;
         }
 
-            .contact-us__errors-item {
+            .b-contact-us__errors-item {
                 @include typo-point;
                 color: #bf1919;
             }

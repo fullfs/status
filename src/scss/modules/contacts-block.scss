@@ -1,12 +1,12 @@
-.contacts-block {
+.b-contacts-block {
 
 }
 
-    .contacts-block__list {
+    .b-contacts-block__list {
         @include cf;
     }
 
-        .contacts-block__item {
+        .b-contacts-block__item {
             float: left;
             box-sizing: border-box;
             width: 60%;
@@ -33,28 +33,28 @@
             }
         }
 
-            .contacts-block__item-link {
+            .b-contacts-block__item-link {
                 text-decoration: none;
             }
 
-                .contacts-block__item-icon {
+                .b-contacts-block__item-icon {
                     width: 74px;
                     height: 74px;
                     float: left;
 
-                    .contacts-block__item._location & {
+                    .b-contacts-block__item._location & {
                         background: url('../images/icons/medium-location.png');
                     }
 
-                    .contacts-block__item._phone & {
+                    .b-contacts-block__item._phone & {
                         background: url('../images/icons/medium-phone.png');
                     }
 
-                    .contacts-block__item._email & {
+                    .b-contacts-block__item._email & {
                         background: url('../images/icons/medium-email.png');
                     }
 
-                    .contacts-block__item._skype & {
+                    .b-contacts-block__item._skype & {
                         background: url('../images/icons/skype.png');
                         width: 80px;
                         height: 80px;
@@ -63,23 +63,23 @@
                         left: -3px;
                     }
 
-                    .contacts-block__item._vk & {
+                    .b-contacts-block__item._vk & {
                         background: url('../images/icons/medium-vk.png');
                     }
 
-                    .contacts-block__item._insta & {
+                    .b-contacts-block__item._insta & {
                         background: url('../images/icons/medium-insta.png');
                     }
                 }
 
-                .contacts-block__item-txt {
+                .b-contacts-block__item-txt {
                     color: $default-fc;
                     @include typo-point;
                     margin-left: 90px;
                     margin-top: 20px;
 
-                    .contacts-block__item._location &,
-                    .contacts-block__item._phone & {
+                    .b-contacts-block__item._location &,
+                    .b-contacts-block__item._phone & {
                         margin-top: 8px;
                     }
                 }

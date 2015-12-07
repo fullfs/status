@@ -1,17 +1,17 @@
-.news-big {
+.b-news-big {
     position: relative;
     margin: 20px 0 50px;
 }
 
-    .news-big__link {
+    .b-news-big__link {
         text-decoration: none;
     }
 
-        .news-big__img {
+        .b-news-big__img {
             max-width: 100%;
         }
 
-        .news-big__caption {
+        .b-news-big__caption {
             position: absolute;
             bottom: 0px;
             left: 0px;
@@ -20,7 +20,7 @@
             padding: 20px 24px 20px;
         }
 
-            .news-big__title {
+            .b-news-big__title {
                 font-size: 24px;
                 line-height: 30px;
                 font-weight: bold;
@@ -28,13 +28,13 @@
                 color: $light-fc;
             }
 
-            .news-big__description {
+            .b-news-big__description {
                 font-size: 18px;
                 line-height: 24px;
                 color: $light-fc;
             }
 
-            .news-big__date {
+            .b-news-big__date {
                 display: block;
                 font-size: 18px;
                 line-height: 36px;
@@ -45,22 +45,22 @@
 
 
 
-.news-small {
+.b-news-small {
     margin-bottom: 30px;
 }
     
-    .news-small__link {
+    .b-news-small__link {
         text-decoration: none;
     }
 
-        .news-small__img {
+        .b-news-small__img {
             max-width: 100%;
         }
 
-        .news-small__caption {
+        .b-news-small__caption {
         }
 
-            .news-small__title {
+            .b-news-small__title {
                 font-size: 18px;
                 line-height: 24px;
                 font-weight: bold;
@@ -68,13 +68,13 @@
                 @include link;
             }
 
-            .news-small__description {
+            .b-news-small__description {
                 font-size: 16px;
                 line-height: 24px;
                 color: $default-fc;
             }
 
-            .news-small__date {
+            .b-news-small__date {
                 display: block;
                 font-size: 16px;
                 line-height: 30px;
