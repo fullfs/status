@@ -57,7 +57,36 @@ html
 
 
 
+            // Слайдер с фотками
+            section.gallery
+                h2.ui-header-1 Номера и виды пансионата
+                .gallery__holder
+                    .gallery__inner
+                        button.gallery__prev(type="button")
+                        button.gallery__next(type="button")
+                        ul.gallery__list
+                            li.gallery__item
+                                strong.gallery__item-title Зоны отдыха, досуга и проведений мероприятий
+                                .gallery__item-controls
+                                    button.gallery__item-arrow-prev(type="button")
+                                    button.gallery__item-arrow-next(type="button")
+                                .gallery__item-img-h
+                                    ul.gallery__item-img-list
+                                        li.gallery__item-img-item
+                                            img.gallery__item-img(src="content/gallery1.jpg" alt="")
+                                        li.gallery__item-img-item
+                                            img.gallery__item-img(src="content/gallery2.jpg" alt="")
 
+                                .gallery__item-bottom
+                                    .gallery__item-description
+                                        | Зоны отдыха, досуга и проведений мероприятий. Здесь всегда можно весело провести время
+
+                                    .gallery__item-counts
+                                        span 1
+                                        span /
+                                        span 2
+
+            // Слайдер с видосами
 
 
 
