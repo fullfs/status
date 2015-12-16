@@ -1,4 +1,5 @@
 .b-header-promo {
+    @include typo;
     height: 480px;
     padding-top: 125px;
     box-sizing: border-box;
@@ -12,6 +13,8 @@
 }
 
     .b-header-promo__title {
+        @include typo;
+        color: $light-fc;
         font-size: 50px;
         line-height: 65px;
         margin-bottom: 15px;

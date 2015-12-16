@@ -1,15 +1,18 @@
 .b-person-title {
+    @include typo;
     font-size: 18px;
     line-height: 36px;
     margin-bottom: 15px;
 }
 
 .b-person {
+    @include typo;
     @include layout1;
     margin-top: 20px;
 }
 
 .b-person-head {
+    @include typo;
     @include cf;
     @include layout1;
     margin-bottom: 40px;
@@ -187,6 +190,7 @@
 
 
 .b-person-graph {
+    @include typo;
     @include layout1;
 }
 
@@ -195,6 +199,7 @@
 
 
 .b-person-meta {
+    @include typo;
     @include layout1;
     @include cf;
     margin-bottom: 40px;
@@ -307,6 +312,7 @@
 
 
 .b-person-menu {
+    @include typo;
     @include layout1;
 }
 

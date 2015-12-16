@@ -1,0 +1,38 @@
+.b-user-menu {
+    background: #036572;
+    padding-top: 70px;
+    z-index: 2;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    padding-bottom: 5px;
+    display: none;
+    min-width: 100%;
+}
+
+    .b-user-menu__item {
+
+    }
+
+        .b-user-menu__item-link {
+            display: block;
+            height: 45px;
+            @include middler;
+            text-decoration: none;
+            color: $light-fc;
+            padding: 0 25px;
+            transition: background 0.3s;
+
+            &:hover,
+            &:focus {
+                background: #008d9f;
+            }
+        }
+
+            .b-user-menu__item-txt {
+                vertical-align: middle;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: normal;
+                white-space: nowrap;
+            }

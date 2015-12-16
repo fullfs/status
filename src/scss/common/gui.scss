@@ -119,8 +119,41 @@ $color-0: #fdd154;
 	}
 }
 
+@mixin button-yellow() {
+    border: 2px solid #fdd154;
+    border-radius: 4px;
+    display: inline-block;
+    height: 54px;
+    line-height: 50px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #fdd154;
+    text-align: center;
+    padding: 0 25px;
+    text-decoration: none;
+    transition: background 0.4s;
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(#fdd154, 0.2);
+        color: #fdd154;
+    }
+}
 
 
+@mixin typo() {
+    font-family: $default-ff;
+    color: $default-fc;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+
+    a:hover {
+        color: inherit;
+    }
+}
 
 @mixin typo-point() {
     font-size: 21px;

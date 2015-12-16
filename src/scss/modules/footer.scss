@@ -1,9 +1,153 @@
 .b-footer {
-    background: #212121;
-    color: #615e5e;
+    @include typo;
+    background: #00636f;
+    color: $light-fc;
     position: relative;
     z-index: 2;
 }
+
+    .b-footer__contacts {
+        padding: 60px 0 50px;
+        border-bottom: 2px solid $light-fc;
+    }
+
+        a.b-footer__order-call {
+            @include button-yellow;
+            width: 100%;
+        }
+
+        a.b-footer__contacts-link {
+            color: $light-fc;
+            text-decoration: none;
+
+            &:hover {
+                color: $light-fc;
+            }
+        }
+
+        .b-footer__contacts-big-row {
+            @include cf;
+            margin-top: 55px;
+        }
+
+            .b-footer__contacts-big-item {
+                float: left;
+
+                .b-footer__contacts-link {
+                    @include cf;
+
+                    &:before {
+                        content: '';
+                        width: 74px;
+                        height: 74px;
+                        float: left;
+                        margin-right: 20px;
+                    }
+                }
+
+                &._location {
+                    width: 60%;
+
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/big-location.png');
+                        }
+                    }
+
+                    .b-footer__contacts-big-txt {
+                        margin-top: 7px;
+                    }
+                }
+
+                &._phone {
+                    width: 40%;
+
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/big-phone.png');
+                        }
+                    }
+
+                    .b-footer__contacts-big-txt {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+                .b-footer__contacts-big-txt {
+                    color: $light-fc;
+                    font-size: 21px;
+                    line-height: 30px;
+                    font-weight: normal;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+
+
+
+
+        .b-footer__contacts-small-row {
+            text-align: center;
+            margin-top: 65px;
+        }
+            
+            .b-footer__contacts-small-item {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 18px;
+
+               .b-footer__contacts-link {
+                    &:before {
+                        content: '';
+                        width: 60px;
+                        height: 61px;
+                        float: left;
+                        margin-right: 20px;
+                    }
+                }
+
+                &._email {
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/email.png');
+                        }
+                    }
+                }
+
+                &._skype {
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/skype.png');
+                        }
+                    }
+                }
+
+                &._vk {
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/vk.png');
+                        }
+                    }
+                }
+
+                &._insta {
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/insta.png');
+                        }
+                    }
+                }
+
+            }
+
+
+
+
+
+
+
+
 
     .b-footer__inner {
         @include layout1;
@@ -20,7 +164,7 @@
             .b-footer__logo {
                 float: left;
                 width: 128px;
-                height: 47px;
+                height: 48px;
                 background: url('../images/logo-footer.png') no-repeat;
                 margin-right: 25px;
             }

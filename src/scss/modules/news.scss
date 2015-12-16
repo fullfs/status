@@ -1,4 +1,5 @@
 .b-news-big {
+    @include typo;
     position: relative;
     margin: 20px 0 50px;
 }
@@ -9,6 +10,7 @@
 
         .b-news-big__img {
             max-width: 100%;
+            min-height: 490px;
         }
 
         .b-news-big__caption {
@@ -55,6 +57,7 @@
 
         .b-news-small__img {
             max-width: 100%;
+            min-height: 288px;
         }
 
         .b-news-small__caption {

@@ -4,11 +4,11 @@
 @import "common/base";
 
 @import "modules/ui";
+@import "modules/page";
 @import "modules/header";
 @import "modules/header-promo";
 @import "modules/navigation";
 @import "modules/auth-form";
-@import "modules/page";
 @import "modules/footer";
 @import "modules/news";
 @import "modules/news-page";
@@ -20,6 +20,7 @@
 @import "modules/contacts-block";
 @import "modules/person";
 @import "modules/paginator";
+@import "modules/user-menu";
 
 
 
@@ -30,4 +31,14 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAABlCAYAAABtG5yUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHJJREFUeNrsnWFkVWEYx5/tzhhjxFiWUUaMGCOWWGIpsb5syiJLKUvE+nI/JEoppZSy6SpN0xQRVzFF9GnEGGO6GiPFiMs0LmNOz+O8x3m7a1v3vdu9zzn3/+NvZ7vd3Pf87nnvOc99z/tWeZ5HFg2cIU4HZy+nkUA5WeZMcb5wxsy2M1WW7MOcp5xm7GOVrHBuc66bN4Gz7OOcV3mPzXJy2Mdlp41TZ/2e5hxzlS1H8ldOvflbinOZs4T9rIZ+zrD5mBUucEYK/U+qOYOW6Iec8xCtjnHOEdOVC0lOwkV2j9mWLvsK9qtaJjmjZrvFnEQXLHu32Z7CER0J4WQJL1h2rdlexL5Uj33CXOsiG1QIkA3ZALIBZG8SUqr1lOcbRbicrEn2QAT2VyunK6qyaxS9lqAi9J0zoWw/SX16f9S78RqFr2mG/JKtJgbjIBsnaDhBA5ANIBtANoBsANkAssHmUYNdEFkOUjh2MB+pQn6kcMwaZEecMyZrISOPbnLuB9LRjccXGXZ8h/OBzLhzHNnR5Rn5twXlI2PTOsm/8SNhuvsXnD7Iji6fyB9P/i8ec+5y3pH//XsvpxvdeHyZ5py0fh+A7HjzmTNvtrsgO/7MmZ9NkB1/gtt7E5BdQUB2BaHx0uso+cN2QYyP7KjM8pDDkV08JziXKJxdQCPvTSC7SNImACdoALIBZAPIhmwA2QCyAWQDyAaQDcqAtmk2ZGCc5tr4W84vyC6el+QPf9WMzAa8C914ZRDp+V01HdmnOK9J97okacjeHJbNZyJANw4gG0A2gGzIBpANIBtU2nW21LC3KXj9i+ba3GVtSll7tEVBG2R5rTSVYJktF9lXOdcUvWFluomzBT5ngPNcURtkZqNDGrvxFWW9U9bhOcvK2lCSmrvLkS3TLb2htefgKiUibcbheTIXyaSSjyI5eKY1f2ZnYnC+Mk/hFBQ4GweQDSAbQDaAbADZALJBua6zZdbbfnJYmX0LKKauLG3QUhiSNmQ1yh7i3FL0hh0jf2RqIZzjPFHUBplj9IDGbjxLunCpgmVi0IaSHNkp8r+l0fIV55zjkbSD06SgDTKv2qxW2cE7Mep15Z8mOBsHkA0gG0A2gGwA2QCyQTmvs2Wpv4ucVgWvXxYYHaHCq3pS15d1LNsVtGHBtGFBo2wZN55U9IZto78XK/sfpDb+SFEbujn7NHbj2urKGcfnaBo7rrZcOsqZIH+Nx3LjWleW2v52zk4FbVA/bnyhFJ8xW0yW9H2Dh7NxANmViH1PWD1kxxt7Ks1GyI43sxTeRbvHRXZwCdKAfameJevMvZP8yX03IvCaE9nBiJN20jHaEqxPMAukzBrRs8G/raOwSpiptp4som9gX6onZfXGD2j9cXRJ6wCeIM/zmjm/vZB7nDoOIWqTtHz94PRyaq3H643HAPHbXCUP0uo5RkpW1QFOJGj1lzh2NbEjz+VpzlggOxA+bPp5EJ8Tuj7yy9tkyxak3i3LGsuC5W3YV5Flivw7Zcbta/M/AgwACZdjw7kNmT0AAAAASUVORK5CYII=');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.ui-clear {
+    clear: both;
+    display: block;
+}
+
+
+html.fancybox-lock {
+    overflow: visible !important;
 }

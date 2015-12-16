@@ -39,18 +39,19 @@ audio:not([controls]) {
 
 html {
 	font-size: 100%;
-    font-weight: 300;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	height: 100%;
 }
 
+a:hover {
+    color: blue;
+}
+
 body {
     margin: 0;
     height: 100%;
-    min-width: 840px;
-    font-family: $default-ff;
-    color: $default-fc;
+    min-width: 840px !important;
 }
 
 html button, html input[type=submit] {

@@ -1,4 +1,5 @@
 .b-header {
+    @include typo;
     background: #00b1be url('../images/header-bg.jpg') no-repeat center -130px;
     color: $light-fc;
     position: relative;
@@ -84,6 +85,7 @@
 
             .b-header__points-item {
                 float: left;
+                position: relative;
 
                 & + & {
                     margin-left: 15px;
@@ -98,6 +100,8 @@
             }
 
                 .b-header__points-item-link {
+                    position: relative;
+                    z-index: 3;
                     display: inline-block;
                     color: $light-fc;
                     text-decoration: none;
@@ -114,10 +118,13 @@
                         border-color: $color-0;
                     }
 
+                    &._menu-open {
+                        border-color: transparent;
+                    }
+
                     &:before {
                         content: '';
                         display: inline-block;
-                        margin-right: 10px;
                         vertical-align: middle;
                     }
 
@@ -136,6 +143,13 @@
                             height: 18px;
                         }
                     }
+                    .b-header__points-item._logout & {
+                        &:before {
+                            background: url('../images/icons/exit.png');
+                            width: 19px;
+                            height: 20px;
+                        }
+                    }
 
                     .b-header__points-item._user & {
                         &:before {
@@ -150,4 +164,14 @@
                         vertical-align: middle;
                         font-size: 18px;
                         font-weight: normal;
+                        margin-left: 10px;
+                        display: inline-block;
                     }
+                        @media screen and (max-width: 1140px) {
+                            .b-header__points-item._user .b-header__points-item-txt {
+                                max-width: 90px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                        }

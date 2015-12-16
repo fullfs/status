@@ -1,4 +1,5 @@
 .b-contact-us {
+    @include typo;
     background: #fdda76 url('../images/contact-us-bg.jpg') no-repeat center top;
     padding: 50px 0 140px;
 }

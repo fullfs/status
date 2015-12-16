@@ -1,4 +1,5 @@
 .b-in-smi-big {
+    @include typo;
     margin-bottom: 30px;
     @include cf;
 }
@@ -43,6 +44,7 @@
             }
 
 .b-in-smi {
+    @include typo;
     margin-bottom: 30px;
 }
     

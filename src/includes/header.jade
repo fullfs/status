@@ -10,9 +10,21 @@ header.b-header(class=headerClass)
             li.b-header__points-item._menu
                 a.b-header__points-item-link(href="#") 
                     span.b-header__points-item-txt Меню
-            li.b-header__points-item._login
+            li.b-header__points-item._user
                 a.b-header__points-item-link(href="#") 
-                    span.b-header__points-item-txt Василий Петрович
+                    span.b-header__points-item-txt admin
+                ul.b-user-menu
+                    li.b-user-menu__item
+                        a.b-user-menu__item-link(href="#")
+                            span.b-user-menu__item-txt Карточка постояльца
+                    li.b-user-menu__item
+                        a.b-user-menu__item-link(href="#")
+                            span.b-user-menu__item-txt Мероприятия
+                        
+
+            li.b-header__points-item._logout
+                a.b-header__points-item-link(href="#") 
+                    span.b-header__points-item-txt Выход
 
 
     nav.b-navigation

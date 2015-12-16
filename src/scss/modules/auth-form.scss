@@ -1,4 +1,5 @@
 .b-auth-form {
+    @include typo;
     background: #333333;
     padding: 70px 0 140px;
     display: none;

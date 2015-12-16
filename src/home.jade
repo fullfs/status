@@ -58,40 +58,45 @@ html
 
 
             // Слайдер с фотками
-            section.gallery
+            section.b-gallery
                 h2.ui-header-1 Номера и виды пансионата
-                .gallery__holder
-                    .gallery__inner
-                        button.gallery__prev(type="button")
-                        button.gallery__next(type="button")
-                        ul.gallery__list
-                            li.gallery__item
-                                strong.gallery__item-title Зоны отдыха, досуга и проведений мероприятий
-                                .gallery__item-controls
-                                    button.gallery__item-arrow-prev(type="button")
-                                    button.gallery__item-arrow-next(type="button")
-                                .gallery__item-img-h
-                                    ul.gallery__item-img-list
-                                        li.gallery__item-img-item
-                                            img.gallery__item-img(src="content/gallery1.jpg" alt="")
-                                        li.gallery__item-img-item
-                                            img.gallery__item-img(src="content/gallery2.jpg" alt="")
+                .b-gallery__holder
+                    .b-gallery__inner
+                        button.b-gallery__prev(type="button")
+                        button.b-gallery__next(type="button")
+                        ul.b-gallery__list
+                            li.b-gallery__item
+                                strong.b-gallery__item-title Зоны отдыха, досуга и проведений мероприятий
+                                .b-gallery__item-controls
+                                    button.b-gallery__item-arrow-prev(type="button")
+                                    button.b-gallery__item-arrow-next(type="button")
+                                .b-gallery__item-img-h
+                                    ul.b-gallery__item-img-list
+                                        li.b-gallery__item-img-item
+                                            img.b-gallery__item-img(src="content/gallery1.jpg" alt="")
+                                        li.b-gallery__item-img-item
+                                            img.b-gallery__item-img(src="content/gallery2.jpg" alt="")
 
-                                .gallery__item-bottom
-                                    .gallery__item-description
+                                .b-gallery__item-bottom
+                                    .b-gallery__item-description
                                         | Зоны отдыха, досуга и проведений мероприятий. Здесь всегда можно весело провести время
 
-                                    .gallery__item-counts
+                                    .b-gallery__item-counts
                                         span 1
                                         span /
                                         span 2
 
             // Слайдер с видосами
-
-
-
-
-
+            section.b-gallery._3d-tour
+                h2.ui-header-1._inverted Виртуальный тур
+                .b-gallery__holder
+                    .b-gallery__inner
+                        button.b-gallery__prev(type="button")
+                        button.b-gallery__next(type="button")
+                        ul.b-gallery__list
+                            li.b-gallery__item
+                                .b-gallery__item-img-h
+                                    img.b-gallery__item-img(src="content/gallery1.jpg" alt="")
 
             section.ui-content
                 h2.ui-header-1 Сми о нас
@@ -146,8 +151,27 @@ html
 
 
 
+            // Слайдер с отзывами
+            section.b-gallery._reviews
+                h2.ui-header-1 Отзывы наших клиентов
+                .b-gallery__holder
+                    .b-gallery__inner
+                        button.b-gallery__prev(type="button")
+                        button.b-gallery__next(type="button")
+                        ul.b-gallery__list
+                            li.b-gallery__item
+                                .b-gallery__item-controls
+                                    button.b-gallery__item-arrow-prev(type="button")
+                                    button.b-gallery__item-arrow-next(type="button")
+                                .b-gallery__person-img-h
+                                    img.b-gallery__person-img(src="content/person.jpg" alt="")
 
-
+                                .b-gallery__review
+                                    | Коллектив дома - это одна дружная семья, которая очень внимательно, с душой относится к отдыхающим. Здесь тебе обеспеченно лечение, вкусное калорийное питание и прекрасный отдых. Еще раз большое спасибо за теплый прием и ласку. Буду скучать.
+                                    
+                                .b-gallery__author
+                                    | Иван Александрович,<br>
+                                    | инвалид Отечественной войны
 
 
 
