@@ -91,7 +91,7 @@
             text-align: center;
             margin-top: 65px;
         }
-            
+
             .b-footer__contacts-small-item {
                 display: inline-block;
                 vertical-align: top;
@@ -139,6 +139,13 @@
                     }
                 }
 
+                &._ok {
+                    .b-footer__contacts-link {
+                        &:before {
+                            background: url('../images/icons/footer/ok.png');
+                        }
+                    }
+                }
             }
 
 
@@ -165,7 +172,8 @@
                 float: left;
                 width: 128px;
                 height: 48px;
-                background: url('../images/logo-footer.png') no-repeat;
+                background: url('../images/logo.png') no-repeat;
+                background-size: 100%;
                 margin-right: 25px;
             }
 
