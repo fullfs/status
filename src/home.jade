@@ -8,9 +8,9 @@ html
         include ./includes/head.jade
 
     body
+        - headerClass = '_promo'
+        include ./includes/header.jade
         .b-page
-            - headerClass = '_promo'
-            include ./includes/header.jade
             include ./includes/header-promo.jade
 
             section.ui-content
